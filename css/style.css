@@ -14,6 +14,9 @@ body {
   font-family: "sf pro text", "Poppins", sans-serif;
   background: #f5f5f5;
 }
+main{
+  margin: 2em 0;
+}
 
 .formulario {
   background: rgba(255, 255, 255, 1);
@@ -45,7 +48,7 @@ body {
   font-size: 0.9em;
 }
 .form-option input {
-  width: 300px;
+  width: 280px;
   height: 4em;
   padding: 0.5em 1.2em;
   border-radius: 0.25rem;
@@ -125,8 +128,6 @@ textarea:focus {
 @media screen and (min-width: 620px) {
   .form-option input {
     width: 500px;
-
-    
   }
   .formulario {
     padding: 5em 3em 3em 3em;
