@@ -1,0 +1,134 @@
+:root {
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "sf pro text", "Poppins", sans-serif;
+}
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: "sf pro text", "Poppins", sans-serif;
+  background: #f5f5f5;
+}
+
+.formulario {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 1em;
+  padding: 5em 2em 2em 2em;
+  border: 1px solid rgba(167, 167, 167, 0.463);
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1);
+}
+.head-formulario {
+  position: relative;
+  top: -2em;
+}
+.head-formulario h1 {
+  text-align: center;
+  font-size: 1.6em;
+}
+.head-formulario h1 span {
+  color: #167efb;
+}
+.form-option {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+  gap: 0.5em;
+}
+.form-option label {
+  color: rgb(99, 99, 99);
+  font-weight: 300;
+  font-size: 0.9em;
+}
+.form-option input {
+  width: 300px;
+  height: 4em;
+  padding: 0.5em 1.2em;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 10px 0 rgba(199, 199, 199, 0.1);
+}
+textarea {
+  border-radius: 0.25rem;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 10px 0 rgba(199, 199, 199, 0.1);
+  padding: 1em;
+  background: #fff;
+}
+textarea:focus {
+  outline: none;
+}
+.buttons {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+.buttons button {
+  padding: 0.8em 1.1em;
+  border: none;
+  /* border: 1px solid rgba(86, 86, 86, 0.1); */
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5em;
+  font-size: 1em;
+  color: #167efb;
+  font-weight: 300;
+  cursor: pointer;
+  background: #fdfdfd;
+  transition: all 0.1s linear;
+}
+.buttons button:active {
+  transform: scale(0.98);
+}
+.buttons button:focus {
+  outline: none;
+}
+
+.disable {
+  opacity: 0.5;
+  cursor: no-drop !important;
+}
+.alert-input,
+.mensaje-enviado {
+  font-size: 0.7em;
+  margin-top: 2em;
+  font-weight: 300;
+}
+#spinner {
+  border: 3px solid rgb(0, 149, 255);
+  height: 30px;
+  width: 30px;
+  border-radius: 3em;
+  border-top-color: transparent;
+  animation: spinner 1s ease-in-out infinite;
+  margin: auto;
+  margin-top: 2em;
+  display: none;
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .form-option input {
+    width: 500px;
+
+    
+  }
+  .formulario {
+    padding: 5em 3em 3em 3em;
+  }
+}
